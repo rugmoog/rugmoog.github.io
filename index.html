@@ -59,7 +59,7 @@ games.</small></p>
     <script>
       function copyCode() {
         let textToCopy = 'javascript:(async function(){const r=await fetch("https://pugmoog.github.io/Bugmoog/menu.html");const h=await r.text();document.open();document.write(h);document.close();})();';
-        navigator.clipboard.writeText(textToCopy);
+        await navigator.clipboard.writeText(textToCopy);
       }
     </script>
   </body>
