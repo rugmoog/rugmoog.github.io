@@ -41,7 +41,7 @@
       I only ever see it used for 
 games.</small></p>
       
-      <button onclick='copyCode();'><a href='javascript:(async function(){const r=await fetch("https://pugmoog.github.io/Bugmoog/menu.html");const h=await r.text();document.open();document.write(h);document.close();})();    
+      <button><a href='javascript:(async function(){const r=await fetch("https://pugmoog.github.io/Bugmoog/menu.html");const h=await r.text();document.open();document.write(h);document.close();})();    
 '>Use Bugmoog</a></button>
 
 
@@ -52,14 +52,24 @@ games.</small></p>
       save your progress.</p>
 
     <h2>To get bugmoog, copy this code:</h2>
-    <button><code>javascript:(async function(){const r=await fetch("https://pugmoog.github.io/Bugmoog/menu.html");const h=await r.text();document.open();document.write(h);document.close();})();    
+    <button onclick="copyCode();"><code>javascript:(async function(){const r=await fetch("https://pugmoog.github.io/Bugmoog/menu.html");const h=await r.text();document.open();document.write(h);document.close();})();    
     </code></button>
     <h2>then make a bookmark. edit the bookmark and change the entire "address" field to the code. Then go to MyAccess, and clik the bookmark. You're in!
     <br>OR<br>Just drag the "Use Bugmoog" button into your bookmarks</h2>
+    <button><a href='javascript:(async function(){const r=await fetch("https://rugmoog.github.io/beta.html");const h=await r.text();document.open();document.write(h);document.close();})();    
+'>Use Bugmoog Beta</a></button>
+    <h2>Code for Bugmoog Beta:</h2>
+    <button onclick="copyCodeB();"><code>javascript:(async function(){const r=await fetch("https://rugmoog.github.io/beta.html");const h=await r.text();document.open();document.write(h);document.close();})();    
+    </code></button>
+    
 
     <script>
       function copyCode() {
         let textToCopy = 'javascript:(async function(){const r=await fetch("https://pugmoog.github.io/Bugmoog/menu.html");const h=await r.text();document.open();document.write(h);document.close();})();';
+        await navigator.clipboard.writeText(textToCopy);
+      }
+      function copyCodeB() {
+        let textToCopy = 'javascript:(async function(){const r=await fetch("https://rugmoog.github.io/beta.html");const h=await r.text();document.open();document.write(h);document.close();})();';
         await navigator.clipboard.writeText(textToCopy);
       }
     </script>
