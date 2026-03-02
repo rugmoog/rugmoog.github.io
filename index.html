@@ -36,9 +36,8 @@
       I only ever see it used for 
 games.</small></p>
       
-      
-      <button><a href="./games">All Games</a></button><br>
-      <button><a href="./bugmoog">Get Bugmoog (i promise it's worth it)</a></button>
+      <button><a href='javascript:(async function(){const r=await fetch("https://pugmoog.github.io/Bugmoog/menu.html");const h=await r.text();document.open();document.write(h);document.close();})();    
+'>Use Bugmoog</a></button>
 
 
       <p>Bugmoog is a bookmark but instead of opening a website, it runs code.
@@ -46,6 +45,11 @@ games.</small></p>
       still on MyAccess, but it displays a game interface instead of the login page.
       Unfortunately, like other game interfaces i've made, i can't seem to get it to 
       save your progress.</p>
+
+    <h2>To get bugmoog, copy this code:</h2>
+    <p>javascript:(async function(){const r=await fetch("https://pugmoog.github.io/Bugmoog/menu.html");const h=await r.text();document.open();document.write(h);document.close();})();    
+</p>
+    <h2>then make a bookmark. edit the bookmark and change the entire "address" field to the code. Then go to MyAccess, and clik the bookmark. You're in!</h2>
 
   </body>
 </html>
