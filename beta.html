@@ -1,0 +1,74 @@
+<html><head>
+    <title>RapidIdentity Login</title>
+    <link rel="shortcut icon" href="https://apsva.us002-rapididentity.com:443/files/apsA.jpg">
+
+  </head>
+
+  <body>
+    <h1>BugMoog v1.7</h1>
+    <p>By PugMoog. <a href="https://pugmoog.com">pugmoog.com</a>
+    <br>Get the latest BugMoog <a href="https://github.com/pugmoog/pugmoog.github.io/blob/main/Bugmoog/get-bugmoog.js">here</a>
+    </p>
+
+    <button data-url="chrome-dino">chrome dino game</button>
+    <button data-url="cookieclicker">cookie clicker</button>
+    <button data-url="eaglercraft">minecraft</button>
+    <br>
+    <button data-url="escaperoad">escape road</button>
+    <button data-url="little-alchemy-two">little alchemy 2</button>
+    <button data-url="little-alchemy">little alchemy</button>
+    <br>
+    <button data-url="ragdoll-archers">ragdoll archers</button>
+    <button data-url="slope-4">slope</button>
+    <button data-url="snow-rider-4d">snow rider 3d</button>
+    <br>
+    <button data-url="survival-race-4">survival race</button>
+    <button data-url="war-the-knights">war the knights</button>
+    <button data-url="tunnelrush">tunnel rush</button>
+    <br>
+    <button data-url="scorch">scorched earth</button>
+    <button data-url="factory-balls-forever">factory balls</button>
+    <button data-url="bitlife">bit life</button>
+    <br>
+    <button data-url="drive-mad">drive mad</button>
+    <button data-url="golf-orbit">golf orbit</button>
+    <button data-url="polytrack">poly track</button>
+    <br>
+    <button data-url="granny">granny</button>
+    <button data-url="---">---</button>
+    <button data-url="candy-crush">candy-crush</button>
+    <button data-url="idle-breakout">idle breakout</button>
+    <br>
+
+    <button data-url="granny-1">granny 1</button>
+    <button data-url="granny-2">granny 2</button>
+    <button id="run-code" onclick="javascript:(async function(){const r=await fetch('https://pugmoog.github.io/games/granny-3/index.html');const h=await r.text();document.open();document.write(h);document.close();})();    
+">granny 3</button>
+    <br>
+
+    <script>
+      setInterval(focus, 20);   
+      function focus() {     
+        var frame = document.getElementById('gameFrame');     
+        frame.contentWindow.focus();   
+      } 
+
+      async function loadPage(url){
+        document.open();
+        document.write("<iframe id='gameFrame' style='position:fixed;left:0;top:0;width:100vw;height:100vh;overflow:hidden;margin:0;padding:0;border:none' src='"+url+"'></iframe>");
+        document.close();
+      }  
+
+      document.querySelectorAll('button').forEach(button=>{
+        if (!(button.id=== "run-code")) {
+        button.onclick=function(){
+          loadPage("https://pugmoog.github.io/games/"+this.dataset.url);
+        };
+        }
+      });
+    </script>
+  
+
+
+
+</body></html>
