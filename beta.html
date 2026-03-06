@@ -3,7 +3,41 @@
   <head>
     <title>RapidIdentity Login</title>
     <link rel="shortcut icon" href="https://apsva.us002-rapididentity.com:443/files/apsA.jpg">
-
+    <style>
+      .game {
+        display: flex;
+        flex-direction:column;
+        align-items:center;
+        min-width:100px;
+        width:15vw;
+        height:auto;
+        border:solid 1px;
+        border-color: black;
+        margin:10px;
+      }
+      .game button {
+        margin:5px;
+      }
+      .game img {
+        max-width:95%;
+        height:auto;
+        margin:5px;
+      }
+      h3 {
+        color:black;
+      }
+      
+      .grid {
+        width:80%;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+      }
+      
+      body {
+      
+      }
+    </style>
   </head>
 
   <body>
@@ -11,11 +45,28 @@
     <p>By PugMoog. <a href="https://pugmoog.com">pugmoog.com</a>
     <br>Get the latest BugMoog <a href="https://github.com/pugmoog/pugmoog.github.io/blob/main/Bugmoog/get-bugmoog.js">here</a>
     </p>
-
-    <button data-url="chrome-dino">chrome dino game</button>
-    <button data-url="cookieclicker">cookie clicker</button>
-    <button data-url="eaglercraft">minecraft</button>
-    <br>
+    
+    
+    <div class="grid">
+      
+      <button class="game" data-url="chrome-dino">
+        <img src="https://rugmoog.github.io/IMG_0625.jpeg"></img>
+        <h3>chrome dino game</h3>
+      </button>
+      
+      <button class="game" data-url="cookieclicker">
+        <img src="https://rugmoog.github.io/IMG_0625.jpeg"></img>
+        <h3>cookie clicker</h3>
+      </button>
+      
+      <button class="game" data-url="eaglercraft">
+        <img src="https://rugmoog.github.io/IMG_0625.jpeg"></img>
+        <h3>minecraft</h3>
+      </button>
+      
+    </div>
+    
+    
     <button data-url="escaperoad">escape road</button>
     <button data-url="little-alchemy-two">little alchemy 2</button>
     <button data-url="little-alchemy">little alchemy</button>
@@ -71,4 +122,3 @@
     </script>
   </body>
 </html>
-
