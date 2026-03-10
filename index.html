@@ -4,10 +4,9 @@
   <head>
     <style>
       body{
-        text-align: center;
         margin: 0 auto;
-        width: 700px;
-        max-width: 80%;
+        width: 80%;
+        max-width: 700px;
       }
       button {
         padding:10px;
@@ -28,39 +27,52 @@
         word-break: break-all;
         color: black;
       }
+      
+      h1,h2 {
+        text-align: center;
+      }
+      
+      .middle {
+        display:flex;
+        justify-content: center;
+      }
+      
+      small {
+        font-size: 0.7em;
+      }
     </style>
   </head>
   <body>
     
       <h1>Bug Moog Online</h1>
-      <p>To the school, or whoever is in charge of blocking
-      websites or making restriction on school iPads, good idea
-      making us unable to view google documents originating outside
-      of APS. Unfortunately for you, i found a way around it the same
-      evening i found out about it. <small>(btw why not block github.io?
-      I only ever see it used for 
-games.</small></p>
-      
-      <button><a href='javascript:(async function(){const r=await fetch("https://pugmoog.github.io/Bugmoog/menu.html");const h=await r.text();document.open();document.write(h);document.close();})();    
-'>Use Bugmoog</a></button>
+      <div class="middle"><button><a href='javascript:(async function(){const r=await fetch("https://pugmoog.github.io/Bugmoog/menu.html");const h=await r.text();document.open();document.write(h);document.close();})();    
+'>Use Bugmoog</a></button></div>
 
 
-      <p>Bugmoog is a bookmark but instead of opening a website, it runs code.
+      <p style="text-align:center">Bugmoog is a bookmark but instead of opening a website, it runs code.
       This one is meant to be used on MyAccess. Once you click it, you're
       still on MyAccess, but it displays a game interface instead of the login page.
       Unfortunately, like other game interfaces i've made, i can't seem to get it to 
       save your progress.</p>
 
-    <h2>To get bugmoog, copy this code:</h2>
-    <button onclick="copyCode();"><code>javascript:(async function(){const r=await fetch("https://pugmoog.github.io/Bugmoog/menu.html");const h=await r.text();document.open();document.write(h);document.close();})();    
-    </code></button>
-    <h2>then make a bookmark. edit the bookmark and change the entire "address" field to the code. Then go to MyAccess, and clik the bookmark. You're in!
-    <br>OR<br>Just drag the "Use Bugmoog" button into your bookmarks<br><br><br>----------<br><br><br></h2>
-    <button><a href='javascript:(async function(){const r=await fetch("https://rugmoog.github.io/beta.html");const h=await r.text();document.open();document.write(h);document.close();})();    
-'>Use Bugmoog Beta</a></button>
-    <h2>Code for Bugmoog Beta:</h2>
-    <button onclick="copyCodeB();" style="margin-bottom:50px"><code>javascript:(async function(){const r=await fetch("https://rugmoog.github.io/beta.html");const h=await r.text();document.open();document.write(h);document.close();})();    
-    </code></button>
+    <h2><br><br>To get bugmoog, you can:</h2>
+    <ul>
+      <li>
+        <p>Drag this button into your bookmarks bar:</p>
+        <button><a href='javascript:(async function(){const r=await fetch("https://pugmoog.github.io/Bugmoog/menu.html");const h=await r.text();document.open();document.write(h);document.close();})();    
+'>Use Bugmoog</a></button>
+      </li>
+      <li>
+        <p>Copy this code:</p>
+        <code>javascript:(async function(){const r=await fetch("https://pugmoog.github.io/Bugmoog/menu.html");const h=await r.text();document.open();document.write(h);document.close();})();</code>
+        <p>Then make a bookmark, edit it, and paste the code into the Adress field.</p>
+      </li>
+    </ul>
+    <h2><br><br>
+      Also there's Bugmoog beta:<br><small>(if i happen to be working on it at the moment)</small></h2>
+      <code>javascript:(async function(){const r=await fetch("https://rugmoog.github.io/beta.html");const h=await r.text();document.open();document.write(h);document.close();})();</code>
+      <button><a href='javascript:(async function(){const r=await fetch("https://rugmoog.github.io/beta.html");const h=await r.text();document.open();document.write(h);document.close();})();'>Use Bugmoog Beta</a></button>
+    </h2>
     
 
     <script>
@@ -75,7 +87,6 @@ games.</small></p>
     </script>
   </body>
 </html>
-
 
 
 
