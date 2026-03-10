@@ -8,40 +8,43 @@
         display: flex;
         flex-direction:column;
         align-items:center;
-        min-width:100px;
-        width:15vw;
+        width:150px;
         height:auto;
         border:solid 1px;
         border-color: black;
-        margin:10px;
+        margin: 10px;
       }
-      .game button {
+      .game:hover {
+        background-color: #bbbbbb;
+      }
+      .game h3 {
         margin:5px;
+        color:black;
+        font-weight: bold;
       }
       .game img {
         max-width:95%;
         height:auto;
         margin:5px;
       }
-      h3 {
-        color:black;
-      }
       
       .grid {
-        width:80%;
-        display:flex;
-        flex-wrap:wrap;
-        justify-content:center;
+        width:90vw;
+        max-width:800px;
+        display: grid;
+        margin: 0 auto;
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); 
       }
       
       body {
-      
+        text-align:center;
+        background-color:white
       }
     </style>
   </head>
 
   <body>
-    <h1>BugMoog v1.7</h1>
+    <h1>BugMoog v2.2</h1>
     <p>By PugMoog. <a href="https://pugmoog.com">pugmoog.com</a>
     <br>Get the latest BugMoog <a href="https://github.com/pugmoog/pugmoog.github.io/blob/main/Bugmoog/get-bugmoog.js">here</a>
     </p>
@@ -50,67 +53,146 @@
     <div class="grid">
       
       <button class="game" data-url="chrome-dino">
-        <img src="https://rugmoog.github.io/IMG_0625.jpeg"></img>
+        <img data-url="dino-game.png"></img>
         <h3>chrome dino game</h3>
       </button>
       
       <button class="game" data-url="cookieclicker">
-        <img src="https://rugmoog.github.io/IMG_0625.jpeg"></img>
+        <img data-url="cookie-clicker.png"></img>
         <h3>cookie clicker</h3>
       </button>
       
       <button class="game" data-url="eaglercraft">
-        <img src="https://rugmoog.github.io/IMG_0625.jpeg"></img>
+        <img data-url="minecraft.png"></img>
         <h3>minecraft</h3>
+      </button>
+      
+      <button class="game" data-url="escaperoad">
+        <img data-url="escape-road.png"></img>
+        <h3>escape road</h3>
+      </button>
+      
+      <button class="game" data-url="little-alchemy-two">
+        <img data-url="la2.png"></img>
+        <h3>little alchemy 2</h3>
+      </button>
+      
+      <button class="game" data-url="little-alchemy">
+        <img data-url="la1.png"></img>
+        <h3>little alchemy</h3>
+      </button>
+      
+      <button class="game" data-url="ragdoll-archers">
+        <img data-url="ragdoll.png"></img>
+        <h3>ragdoll archers</h3>
+      </button>
+      
+      <button class="game" data-url="snow-rider-4d">
+        <img data-url="snow-rider.png"></img>
+        <h3>snow rider</h3>
+      </button>
+      
+      <button class="game" data-url="slope-4">
+        <img data-url="slope.png"></img>
+        <h3>slope</h3>
+      </button>
+      
+      <button class="game" data-url="survival-race-4">
+        <img data-url="survival-race.png"></img>
+        <h3>survival race</h3>
+      </button>
+      
+      <button class="game" data-url="war-the-knights">
+        <img data-url="war-the-knights.png"></img>
+        <h3>war the knights</h3>
+      </button>
+      
+      <button class="game" data-url="tunnelrush">
+        <img data-url="tunnel-rush.png"></img>
+        <h3>tunnel rush</h3>
+      </button>
+      
+      <button class="game" data-url="factory-balls-forever">
+        <img data-url="factory-balls.png"></img>
+        <h3>factory balls</h3>
+      </button>
+      
+      <button class="game" data-url="scorch">
+        <img data-url="scorch.png"></img>
+        <h3>scorched earth</h3>
+      </button>
+      
+      <button class="game" data-url="bitlife">
+        <img data-url="bitlife.png"></img>
+        <h3>bitlife</h3>
+      </button>
+      
+      <button class="game" data-url="drive-mad">
+        <img data-url="drive-mad.png"></img>
+        <h3>drive mad</h3>
+      </button>
+      
+      <button class="game" data-url="golf-orbit">
+        <img data-url="golf-orbit.png"></img>
+        <h3>golf orbit</h3>
+      </button>
+      
+      <button class="game" data-url="polytrack">
+        <img data-url="polytrack.png"></img>
+        <h3>poly track</h3>
+      </button>
+      
+      <button class="game" data-url="Ballistic">
+        <img data-url="ballistic.png"></img>
+        <h3>ballistic</h3>
+      </button>
+      
+      <button class="game" data-url="candy-crush">
+        <img data-url="candy.png"></img>
+        <h3>candy crush</h3>
+      </button>
+      
+      <button class="game" data-url="idle-breakout">
+        <img data-url="idle-breakout.png"></img>
+        <h3>idle breakout</h3>
+      </button>
+      
+      <button class="game" data-url="granny-1">
+        <img data-url="granny.png"></img>
+        <h3>granny</h3>
+      </button>
+      
+      <button class="game" data-url="granny-2">
+        <img data-url="granny.png"></img>
+        <h3>granny 2</h3>
+      </button>
+      
+      <button class="game" id="run-code" onclick="javascript:(async function(){const r=await fetch('https://pugmoog.github.io/games/granny-3/index.html');const h=await r.text();document.open();document.write(h);document.close();})();">
+        <img data-url="granny.png"></img>
+        <h3>granny 3</h3>
+      </button>
+      
+      <button class="game" id="run-code" onclick="javascript:(async function(){const r=await fetch('https://rugmoog.github.io/Lemonoids.html');const h=await r.text();document.open();document.write(h);document.close();})();">
+        <img data-url="lemon.png"></img>
+        <h3>granny 3</h3>
       </button>
       
     </div>
     
     
-    <button data-url="escaperoad">escape road</button>
-    <button data-url="little-alchemy-two">little alchemy 2</button>
-    <button data-url="little-alchemy">little alchemy</button>
-    <br>
-    <button data-url="ragdoll-archers">ragdoll archers</button>
-    <button data-url="slope-4">slope</button>
-    <button data-url="snow-rider-4d">snow rider 3d</button>
-    <br>
-    <button data-url="survival-race-4">survival race</button>
-    <button data-url="war-the-knights">war the knights</button>
-    <button data-url="tunnelrush">tunnel rush</button>
-    <br>
-    <button data-url="scorch">scorched earth</button>
-    <button data-url="factory-balls-forever">factory balls</button>
-    <button data-url="bitlife">bit life</button>
-    <br>
-    <button data-url="drive-mad">drive mad</button>
-    <button data-url="golf-orbit">golf orbit</button>
-    <button data-url="polytrack">poly track</button>
-    <br>
-    <button data-url="granny">granny</button>
-    <button data-url="Ballistic">ballistic</button>
-    <button data-url="candy-crush">candy-crush</button>
-    <button data-url="idle-breakout">idle breakout</button>
-    <br>
-
-    <button data-url="granny-1">granny 1</button>
-    <button data-url="granny-2">granny 2</button>
-    <button id="run-code" onclick="javascript:(async function(){const r=await fetch('https://pugmoog.github.io/games/granny-3/index.html');const h=await r.text();document.open();document.write(h);document.close();})();    
-">granny 3</button>
-    <br>
-
     <script>
-      setInterval(focus, 20);   
-      function focus() {     
-        var frame = document.getElementById('gameFrame');     
-        frame.contentWindow.focus();   
-      } 
-
       async function loadPage(url){
+        let response = await fetch("https://pugmoog.github.io/Bugmoog/game-page.html");
+        let html = await response.text();
+
         document.open();
-        document.write("<iframe id='gameFrame' style='position:fixed;left:0;top:0;width:100vw;height:100vh;overflow:hidden;margin:0;padding:0;border:none' src='"+url+"'></iframe>");
+        document.write(html);
         document.close();
+
+        let frame = document.getElementById("gameFrame");
+        frame.src=url;
       }  
+ 
 
       document.querySelectorAll('button').forEach(button=>{
         if (!(button.id=== "run-code")) {
@@ -119,6 +201,11 @@
         };
         }
       });
+      
+      document.querySelectorAll('img').forEach(image=>{
+        image.src = "https://pugmoog.github.io/Bugmoog/images/"+image.dataset.url;
+      });
     </script>
+    
   </body>
 </html>
