@@ -40,6 +40,21 @@
       small {
         font-size: 0.7em;
       }
+      
+      li {
+		    text-align: center;
+		    margin: 30px;
+		  }
+		  ul {
+		    display: flex;
+        justify-content: space-around;
+        padding: 0px;
+        list-style-type: none;
+		  }
+		  .center-align {
+		    text-align: center;
+		    
+		  }
     </style>
   </head>
   <body>
@@ -51,7 +66,7 @@
       still on MyAccess, but it displays a game interface instead of the login page.
       Unfortunately, like other game interfaces i've made, i can't seem to get it to 
       save your progress.</p>
-
+    <div style="border-width:2px;border:black">
     <h2><br><br>To get bugmoog, you can:</h2>
     <p style="color:red">if you're on an inventions & innovations computer, just press the button. for some reason bookmarklets dont work.</p>
     <ul>
@@ -59,7 +74,7 @@
         <p>Hold down then drag this button into your bookmarks bar:</p>
         <button><a href='javascript:(async function(){const r=await fetch("https://pugmoog.github.io/Bugmoog/menu.html");const h=await r.text();document.open();document.write(h);document.close();})();    
 '>Use Bugmoog</a></button>
-<h2><br>OR<br><br></h2>
+</li><li><h2>OR</h2>
       </li>
       <li>
         <p>Copy this code:</p>
@@ -67,7 +82,8 @@
         <p>Then make a bookmark, edit it, and paste the code into the Address field.</p>
       </li>
     </ul>
-    <h2><br><br><br><br><br>
+    </div>
+    <h2><br>
       Also there's Bugmoog beta:<br><small>(if i happen to be working on it at the moment)</small></h2>
       <code>javascript:(async function(){const r=await fetch("https://rugmoog.github.io/beta.html");const h=await r.text();document.open();document.write(h);document.close();})();</code>
       <button><a href='javascript:(async function(){const r=await fetch("https://rugmoog.github.io/beta.html");const h=await r.text();document.open();document.write(h);document.close();})();'>Use Bugmoog Beta</a></button>
