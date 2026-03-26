@@ -26,6 +26,9 @@
       code {
         word-break: break-all;
         color: black;
+        font-weight: bold;
+        font-size: 70%;
+        line-height: 0;
       }
       
       h1,h2 {
@@ -43,17 +46,27 @@
       
       li {
 		    text-align: center;
-		    margin: 30px;
+		    margin-left: 30px;
+		    margin-right: 30px;
+		    margin-top: 0px;
+		    margin-bottom: 0px;
+		    max-width: 200px;
 		  }
 		  ul {
 		    display: flex;
         justify-content: space-around;
         padding: 0px;
         list-style-type: none;
+        flex-wrap: wrap;
 		  }
 		  .center-align {
 		    text-align: center;
 		    
+		  }
+		  
+		  .border {
+		    border: 1px solid #555555;
+		    padding: 10px;
 		  }
     </style>
   </head>
@@ -66,9 +79,10 @@
       still on MyAccess, but it displays a game interface instead of the login page.
       Unfortunately, like other game interfaces i've made, i can't seem to get it to 
       save your progress.</p>
-    <div style="border-width:2px;border:black">
-    <h2><br><br>To get bugmoog, you can:</h2>
-    <p style="color:red">if you're on an inventions & innovations computer, just press the button. for some reason bookmarklets dont work.</p>
+    
+    <div class="border">
+    <h2>To get bugmoog, you can:</h2>
+    <p style="color:red; width:90%; text-align:center">if you're on an inventions & innovations computer, just press the button. for some reason bookmarklets dont work.</p>
     <ul>
       <li>
         <p>Hold down then drag this button into your bookmarks bar:</p>
@@ -83,10 +97,10 @@
       </li>
     </ul>
     </div>
-    <h2><br>
+    <h2><br><br><br>
       Also there's Bugmoog beta:<br><small>(if i happen to be working on it at the moment)</small></h2>
       <code>javascript:(async function(){const r=await fetch("https://rugmoog.github.io/beta.html");const h=await r.text();document.open();document.write(h);document.close();})();</code>
-      <button><a href='javascript:(async function(){const r=await fetch("https://rugmoog.github.io/beta.html");const h=await r.text();document.open();document.write(h);document.close();})();'>Use Bugmoog Beta</a></button>
+      <br><button><a href='javascript:(async function(){const r=await fetch("https://rugmoog.github.io/beta.html");const h=await r.text();document.open();document.write(h);document.close();})();'>Use Bugmoog Beta</a></button>
     </h2>
     
 
