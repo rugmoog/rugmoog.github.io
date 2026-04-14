@@ -23,13 +23,6 @@
         text-decoration: underline;
       }
 
-      code {
-        word-break: break-all;
-        color: black;
-        font-weight: bold;
-        font-size: 70%;
-        line-height: 0;
-      }
       
       h1,h2 {
         text-align: center;
@@ -40,82 +33,33 @@
         justify-content: center;
       }
       
-      small {
-        font-size: 0.7em;
-      }
-      
-      li {
-		    text-align: center;
-		    margin-left: 30px;
-		    margin-right: 30px;
-		    margin-top: 0px;
-		    margin-bottom: 0px;
-		    max-width: 200px;
-		  }
-		  ul {
-		    display: flex;
-        justify-content: space-around;
-        padding: 0px;
-        list-style-type: none;
-        flex-wrap: wrap;
-		  }
-		  .center-align {
-		    text-align: center;
-		    
-		  }
 		  
 		  .border {
 		    border: 1px solid #555555;
 		    padding: 10px;
+		    text-align:center;
+		    width: 50%;
+		    height: 200px;
 		  }
     </style>
   </head>
   <body>
-      <h1 style="color:red">Please READ the directions below to get bugmoog</h1>
       <h1>Bug Moog Online</h1>
-
-      <p style="text-align:center">Bugmoog is a bookmark but instead of opening a website, it runs code.
-      This one is meant to be used on MyAccess. Once you click it, you're
-      still on MyAccess, but it displays a game interface instead of the login page.
-      Unfortunately, like other game interfaces i've made, i can't seem to get it to 
-      save your progress.</p>
     
-    <div class="border">
-    <h2>To get bugmoog, you can:</h2>
-    <ul>
-      <li>
+<div class="middle"><div class="border">
         <p>Hold down and drag this button into your bookmarks bar:</p>
         <button><a href='javascript:(async function(){const r=await fetch("https://pugmoog.github.io/Bugmoog/menu.html");const h=await r.text();document.open();document.write(h);document.close();})();    
 '>Use Bugmoog</a></button><p><small style="color:red">(if you're on an inventions & innovations computer, just press the button. For some reason bookmarklets don't work)</small></p>
-</li><li><h2>OR</h2>
-      </li>
-      <li>
-        <p>Copy this code:</p>
-        <code>javascript:(async function(){const r=await fetch("https://pugmoog.github.io/Bugmoog/menu.html");const h=await r.text();document.open();document.write(h);document.close();})();</code>
-        <p>Then make a bookmark, edit it, and paste the code into the Address field.</p>
-      </li>
-    </ul>
-    </div>
-    <h2><br><br><br>
+</div><img src="https://rugmoog.github.io/drag.gif" style="margin:10px;height:250px; width:auto"></div>
+    
+    <br><br><hr><br><br>
+    <div class="middle" style="margin-top: 30px">Bugmoog is a bookmark but instead of opening a website, it runs code. This one is meant to be used on MyAccess. Once you click it, you're still on MyAccess, but it displays a game interface instead of the login page. Unfortunately, like other game interfaces i've made, i can't seem to get it to save your progress.</div>
+    <h2><br>
       Also there's Bugmoog beta:<br><small>(if i happen to be working on it at the moment)</small></h2>
-      <code>javascript:(async function(){const r=await fetch("https://rugmoog.github.io/beta.html");const h=await r.text();document.open();document.write(h);document.close();})();</code>
       <br><button><a href='javascript:(async function(){const r=await fetch("https://rugmoog.github.io/beta.html");const h=await r.text();document.open();document.write(h);document.close();})();'>Use Bugmoog Beta</a></button>
     </h2>
-    
-
-    <script>
-      function copyCode() {
-        let textToCopy = 'javascript:(async function(){const r=await fetch("https://pugmoog.github.io/Bugmoog/menu.html");const h=await r.text();document.open();document.write(h);document.close();})();';
-        await navigator.clipboard.writeText(textToCopy);
-      }
-      function copyCodeB() {
-        let textToCopy = 'javascript:(async function(){const r=await fetch("https://rugmoog.github.io/beta.html");const h=await r.text();document.open();document.write(h);document.close();})();';
-        await navigator.clipboard.writeText(textToCopy);
-      }
-    </script>
   </body>
 </html>
-
 
 
 
