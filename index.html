@@ -48,8 +48,20 @@
     
 <div class="middle"><div class="border">
         <p>Hold down and drag this button into your bookmarks bar:</p>
-        <button><a href='javascript:(async function(){const r=await fetch("https://pugmoog.github.io/Bugmoog/menu.html");const h=await r.text();document.open();document.write(h);document.close();})();    
-'>Use Bugmoog</a></button><p><small style="color:red">(if you're on an inventions & innovations computer, just press the button. For some reason bookmarklets don't work)</small></p>
+        <button><a href='
+javascript:(async function(){
+let isMobile = window.matchMedia("(pointer:coarse)").matches;
+let isRugmoog = (window.location.hostname === "rugmoog.github.io");
+
+if ((!isRugmoog) || (!isMobile)) {
+const r=await fetch("https://pugmoog.github.io/Bugmoog/menu.html");
+const h=await r.text();
+document.open();document.write(h);document.close();
+} else {
+  alert("Please dont use BugMoog on rugmoog.github.io. Use it on MyAccess instead.");
+}
+})();
+        '>Use Bugmoog</a></button><p><small style="color:red">(if you're on an inventions & innovations computer, just press the button. For some reason bookmarklets don't work)</small></p>
 </div><img src="https://rugmoog.github.io/drag.gif" style="margin:10px;height:350px; width:auto"></div>
 <h1 style="color:blue">Then go to <a href="https://myaccess.apsva.us">MyAccess</a> and click the bookmark</h1>
     
@@ -57,11 +69,23 @@
     <div class="middle" style="margin-top: 30px">Bugmoog is a bookmark but instead of opening a website, it runs code. This one is meant to be used on MyAccess. Once you click it, you're still on MyAccess, but it displays a game interface instead of the login page. Unfortunately, like other game interfaces i've made, i can't seem to get it to save your progress.</div>
     <h2><br>
       Also there's Bugmoog beta:<br><small>(if i happen to be working on it at the moment)</small></h2>
-      <br><button><a href='javascript:(async function(){const r=await fetch("https://rugmoog.github.io/beta.html");const h=await r.text();document.open();document.write(h);document.close();})();'>Use Bugmoog Beta</a></button>
+      <br><button><a href='
+javascript:(async function(){
+let isMobile = window.matchMedia("(pointer:coarse)").matches;
+let isRugmoog = (window.location.hostname === "rugmoog.github.io");
+
+if ((!isRugmoog) || (!isMobile)) {
+const r=await fetch("https://rugmoog.github.io/beta.html");
+const h=await r.text();
+document.open();document.write(h);document.close();
+} else {
+  alert("Please dont use BugMoog on rugmoog.github.io. Use it on MyAccess instead.");
+}
+})();    
+      '>Use Bugmoog Beta</a></button>
     </h2>
   </body>
 </html>
-
 
 
 
