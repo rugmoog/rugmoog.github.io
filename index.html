@@ -84,8 +84,52 @@ document.open();document.write(h);document.close();
 })();    
       '>Use Bugmoog Beta</a></button>
     </h2>
+	  <h2><br>
+      Bugmoog but it opens underneath the current page</h2>
+      <br><button><a href='
+javascript:(async function(){
+    let isMobile = window.matchMedia(`(pointer: coarse)`).matches;
+    let isRugmoog = (window.location.hostname === `rugmoog.github.io`); 
+
+    if ((!isRugmoog) || (!isMobile)) {
+        const r = await fetch(`https://pugmoog.github.io/Bugmoog/menu.html`);
+        const h = await r.text(); 
+        let con = document.createElement(`div`);
+        con.innerHTML = h;
+        document.body.appendChild(con); 
+        
+        const rs = await fetch(`https://pugmoog.github.io/Bugmoog/script.js`);
+        const hs = await rs.text();
+        eval(hs); 
+    } else {
+        alert(`Please dont use BugMoog on rugmoog.github.io. Use it on MyAccess instead.`);
+    }
+})();
+      '>Use BugMoog Underneath</a></button>
+    </h2>
   </body>
 </html>
 
+
+
+
+javascript:(async function(){
+    let isMobile = window.matchMedia('(pointer: coarse)').matches;
+    let isRugmoog = (window.location.hostname === 'rugmoog.github.io'); 
+
+    if ((!isRugmoog) || (!isMobile)) {
+        const r = await fetch('https://pugmoog.github.io/Bugmoog/menu.html');
+        const h = await r.text(); 
+        let con = document.createElement('div');
+        con.innerHTML = h;
+        document.body.appendChild(con); 
+        
+        const rs = await fetch('https://pugmoog.github.io/Bugmoog/script.js');
+        const hs = await rs.text();
+        eval(hs); 
+    } else {
+        alert('Please dont use BugMoog on rugmoog.github.io. Use it on MyAccess instead.');
+    }
+})();
 
 
