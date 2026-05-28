@@ -110,26 +110,3 @@ javascript:(async function(){
   </body>
 </html>
 
-
-
-
-javascript:(async function(){
-    let isMobile = window.matchMedia('(pointer: coarse)').matches;
-    let isRugmoog = (window.location.hostname === 'rugmoog.github.io'); 
-
-    if ((!isRugmoog) || (!isMobile)) {
-        const r = await fetch('https://pugmoog.github.io/Bugmoog/menu.html');
-        const h = await r.text(); 
-        let con = document.createElement('div');
-        con.innerHTML = h;
-        document.body.appendChild(con); 
-        
-        const rs = await fetch('https://pugmoog.github.io/Bugmoog/script.js');
-        const hs = await rs.text();
-        eval(hs); 
-    } else {
-        alert('Please dont use BugMoog on rugmoog.github.io. Use it on MyAccess instead.');
-    }
-})();
-
-
